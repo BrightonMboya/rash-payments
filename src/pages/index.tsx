@@ -1,3 +1,26 @@
+// import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+// import styles from "./index.module.css";
+// import Services from "../components/landingpage/Services";
+// import Hero from "../components/landingpage/Hero";
+// import Proposal from "../components/landingpage/Proposal";
+// import Cases from "../components/landingpage/Cases";
+// import Contact from "../components/landingpage/Contact";
+
+// export default function Home(): JSX.Element {
+//   const { siteConfig } = useDocusaurusContext();
+//   return (
+//     // <Layout title="">
+//     <>
+//       <Hero />
+//       <Services />
+//       <Proposal />
+//       <Cases />
+//       <Contact />
+//     </>
+
+//     // </Layout>
+//   );
+// }
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -36,7 +59,6 @@ export default function Home(): JSX.Element {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <h3 className="text-red-500">Hello world</h3>
         <HomepageFeatures />
       </main>
     </Layout>
