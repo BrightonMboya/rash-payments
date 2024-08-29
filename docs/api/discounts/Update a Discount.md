@@ -2,8 +2,6 @@
 sidebar_position: 5
 ---
 
-### Update Discount
-
 The `Update Discount` endpoint allows you to modify the details of an existing discount. This can be useful for changing the discount's status, updating the discount amount, or adjusting its usage limit.
 
 #### Endpoint

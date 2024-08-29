@@ -2,7 +2,6 @@
 sidebar_position: 2
 ---
 
-### List Discounts
 
 The `List Discounts` endpoint allows you to retrieve a list of all discounts. This endpoint is useful for managing and reviewing available discounts, including active promotions, archived discounts, and those that have expired or reached their usage limit.
 

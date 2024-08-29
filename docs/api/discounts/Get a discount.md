@@ -2,7 +2,6 @@
 sidebar_position: 4
 ---
 
-### Get Discount
 
 The `Get Discount` endpoint allows you to retrieve detailed information about a specific discount. This is useful for viewing the configuration of a discount, checking its status, and understanding its usage and applicability.
 

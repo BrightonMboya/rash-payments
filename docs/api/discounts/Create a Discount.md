@@ -2,7 +2,6 @@
 sidebar_position: 3
 ---
 
-### Create Discount
 
 This endpoint allows you to create a new discount that can be applied to products, prices, or orders during checkout. This is useful for running promotions, offering limited-time discounts, or creating special offers for specific customer segments.
 
