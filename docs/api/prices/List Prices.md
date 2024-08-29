@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 ---
+
 ### List Prices
 
 This endpoint allows you to retrieve a list of all price entities associated with your products. This endpoint is useful for displaying available pricing options, managing price configurations, or integrating with other parts of your system. You can use the query parameters to configure how the results.
@@ -49,48 +50,48 @@ GET /api/v1/prices?product_id=pro_01h1vjes1y163xfj1rh1tkfb65&status=active
 
 ```json
 [
-    {
-        "id": "price_01h1vjf02g163xfj1rh1tkfz67",
-        "product_id": "pro_01h1vjes1y163xfj1rh1tkfb65",
-        "unit_price": {
-            "amount": "999",
-            "currency": "USD"
-        },
-        "name": "Monthly Subscription",
-        "description": "Access to premium features with a monthly billing cycle.",
-        "type": "recurring",
-        "custom_data": {
-            "tier": "premium"
-        },
-        "billing_cycle": {
-            "frequency": 1,
-            "interval": "monthly"
-        },
-        "status": "active",
-        "created_at": "2023-06-01T13:35:22.302Z",
-        "updated_at": "2024-04-05T15:50:12.163Z"
+  {
+    "id": "price_01h1vjf02g163xfj1rh1tkfz67",
+    "product_id": "pro_01h1vjes1y163xfj1rh1tkfb65",
+    "unit_price": {
+      "amount": "999",
+      "currency": "USD"
     },
-    {
-        "id": "price_01h1vjf02g163xfj1rh1tkfz68",
-        "product_id": "pro_01h1vjes1y163xfj1rh1tkfb65",
-        "unit_price": {
-            "amount": "9999",
-            "currency": "USD"
-        },
-        "name": "Annual Subscription",
-        "description": "Access to premium features with an annual billing cycle.",
-        "type": "recurring",
-        "custom_data": {
-            "tier": "premium"
-        },
-        "billing_cycle": {
-            "frequency": 1,
-            "interval": "yearly"
-        },
-        "status": "active",
-        "created_at": "2023-06-01T13:35:22.302Z",
-        "updated_at": "2024-04-05T15:50:12.163Z"
-    }
+    "name": "Monthly Subscription",
+    "description": "Access to premium features with a monthly billing cycle.",
+    "type": "recurring",
+    "custom_data": {
+      "tier": "premium"
+    },
+    "billing_cycle": {
+      "frequency": 1,
+      "interval": "monthly"
+    },
+    "status": "active",
+    "created_at": "2023-06-01T13:35:22.302Z",
+    "updated_at": "2024-04-05T15:50:12.163Z"
+  },
+  {
+    "id": "price_01h1vjf02g163xfj1rh1tkfz68",
+    "product_id": "pro_01h1vjes1y163xfj1rh1tkfb65",
+    "unit_price": {
+      "amount": "9999",
+      "currency": "USD"
+    },
+    "name": "Annual Subscription",
+    "description": "Access to premium features with an annual billing cycle.",
+    "type": "recurring",
+    "custom_data": {
+      "tier": "premium"
+    },
+    "billing_cycle": {
+      "frequency": 1,
+      "interval": "yearly"
+    },
+    "status": "active",
+    "created_at": "2023-06-01T13:35:22.302Z",
+    "updated_at": "2024-04-05T15:50:12.163Z"
+  }
 ]
 ```
 

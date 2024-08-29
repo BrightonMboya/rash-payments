@@ -2,9 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    fontFamily: {
-      grotesk: ["Grotesk", "sans-serif"],
-    },
+    // fontFamily: {
+    //   grotesk: ["Grotesk", "sans-serif"],
+    // },
     extend: {
       fontWeight: {
         regular: 400,

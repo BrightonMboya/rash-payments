@@ -1,0 +1,8 @@
+{
+  "label": "Discounts",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "API Ref"
+  }
+}
