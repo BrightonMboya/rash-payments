@@ -2,7 +2,6 @@
 sidebar_position: 1
 ---
 
-
 The `Customer` object represents an individual or organization that interacts with your business. This object contains information about the customer, including their contact details, billing information, and account status.
 
 Customers contains two sub entities:
