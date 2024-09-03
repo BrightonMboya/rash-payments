@@ -1,0 +1,47 @@
+---
+slug: billing-solution
+title: Why this project
+authors: [brighton]
+tags: [product]
+---
+
+This project being open source can attract readers and interests from different parts of the world and 
+I want to provide as much context as possible so that the end reader can have the correct perspective 
+of the problem we're trying to solve. 
+
+For like forever now, Stripe has set up the standards of accepting payments online in the countries where
+they support. If you're a Indie dev or a small startup, you can quickly validate your idea by just having
+a stripe payment link and that's incredible if you think about how much heavy lifting Stripe has offered you.
+
+Now I live in Tanzania, East Africa where Stripe isn't supported and every time I launch a new idea,
+I go through the manual steps of "building my own Stripe" to accept payments. Here is my typical 
+flow when I launch a new product.
+- I contact my payment provider for example DPO Payments, Flutterwave etc and I get access to their 
+payment API. Now this API allows me charge my customers for money. I then have to handle things like
+Invoice creation, handle refunds, charge credit card banks, charge out mobile money transfer, do a proper 
+financial record keeping for when i want to share the metrics to an investor, or just internal use.
+- Build my own billing solution. Yes that's right, I get to build my own in house billing solution that
+can change depend on how much this little tiny product of mine gets received by the market. I get to have 
+footguns on this billing solution and i get to iterate and improve as it grows. 
+
+I want to stress one thing, this problem gets solved easily by companies like lemonsquezzy, paddle etc. 
+In fact majority of the design and lessons of this project is drawn from me using and trying to reverse 
+engineer these products to work on my use case. And my use case being "I want to accept mobile money transfers
+from my customers". Yes, I can confidently make a claim that at least 95% of all B2C customers prefer 
+to pay via mobile money even though they have access to a bank (this is true for all African countries
+I have extensively researched on East Africa, West Africa, and Southern African countries). 
+I can even summarize its the whole continent, but I haven't researched fully on North Africa so i cant really say.
+
+And so this project is for folks selling digital products in these regions, you don't have to spend
+your bunch amount of time trying to get paid and build your own billing solution. This project aims at
+reproducing Stripe, Paddle, lemonsquezzy but for mobile money transfers. One more important note is, this
+project is meant to be a billing service and we don't process any payments. Our product is designed to 
+be compatible with battle tested PSP out there like Cellulant, and DPO Payments.
+
+If there will be demand for this product to accomodate sth like "An open source alternative to Paddle and lemonsquezzy"
+then we will do this via integrations sections, but the focus right now is making it easier to sell
+digital products in Sub Saharan Africa.
+
+So yes, that is the context o the problem we're trying to solve. I hope I will get the courage to finish 
+this project and see it to fruition and I can use it on my personal use. I will be building and documenting
+the whole process online and hopefully we can get sth moving from there.
