@@ -7,7 +7,7 @@ This endpoint allows you to modify the details of an existing customer. This end
 #### Endpoint
 
 ```http
-PUT /api/v1/customers/{customer_id}
+PATCH /api/v1/customers/{customer_id}
 ```
 
 #### Path Parameters

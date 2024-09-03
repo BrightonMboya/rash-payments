@@ -7,7 +7,7 @@ This endpoint allows you to modify the details of an existing address associated
 #### Endpoint
 
 ```
-PUT https://api/v1/customers/{customer_id}/addresses/{address_id}
+PATCH https://api/v1/customers/{customer_id}/addresses/{address_id}
 ```
 
 #### Path Parameters
