@@ -2,8 +2,6 @@
 sidebar_position: 3
 ---
 
-
-
 **Endpoint:** `POST /transactions`
 
 **Description:**  
@@ -56,7 +54,7 @@ Creates a new transaction in the system. This endpoint allows you to manually cr
 - **billing_period** (object, optional): The billing period for the transaction, including `start` and `end` dates in RFC 3339 format.
 - **items** (array of objects, required): List of items for this transaction. Each item requires a `price_id` (the ID of the price entity) and `quantity`.
 - **custom_data** (object, optional): Structured key-value data relevant to the transaction.
-- **enable_checkout** (boolean, optional): Whether to enable Paddle Checkout for this transaction. Defaults to `false`.
+- **enable_checkout** (boolean, optional): Whether to enable Jani Checkout for this transaction. Defaults to `false`.
 - **purchase_order_number** (string, optional): A purchase order number associated with this transaction.
 - **additional_information** (string, optional): Additional notes or information for the transaction.
 
@@ -117,14 +115,15 @@ Creates a new transaction in the system. This endpoint allows you to manually cr
 - **billing_period** (object): The billing period for the transaction.
 - **items** (array): The list of items included in the transaction.
 - **custom_data** (object): Custom data associated with the transaction.
-- **enable_checkout** (boolean): Indicates whether Paddle Checkout is enabled for the transaction.
+- **enable_checkout** (boolean): Indicates whether Jani Checkout is enabled for the transaction.
 - **purchase_order_number** (string): The purchase order number for the transaction.
 - **additional_information** (string): Additional notes about the transaction.
 - **created_at** (string): The date and time the transaction was created.
 - **updated_at** (string): The date and time the transaction was last updated.
 
 **Notes:**
+
 - The transaction is initially set to `draft` upon creation, and it can later be updated to `completed` or other statuses as needed.
 - The `billing_details` and `billing_period` fields are only necessary if `collection_mode` is set to `manual`.
-- The `enable_checkout` flag determines whether a checkout session should be created for the transaction, allowing the customer to complete the payment via Paddle's hosted checkout page.
+- The `enable_checkout` flag determines whether a checkout session should be created for the transaction, allowing the customer to complete the payment via Jani's hosted checkout page.
 - Ensure that all required fields are properly validated to prevent errors during transaction creation.

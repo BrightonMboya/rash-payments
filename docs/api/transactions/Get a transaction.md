@@ -92,10 +92,7 @@ Retrieves detailed information about a specific transaction. This endpoint provi
     "name": "Summer Sale",
     "amount": "10.00"
   },
-  "available_payment_methods": [
-    "credit_card",
-    "paypal"
-  ]
+  "available_payment_methods": ["credit_card", "paypal"]
 }
 ```
 
@@ -113,7 +110,7 @@ Retrieves detailed information about a specific transaction. This endpoint provi
 - **billing_period** (object): The billing period covered by the transaction, including `start` and `end` dates.
 - **items** (array): List of items in the transaction, including `price_id`, `quantity`, and `unit_price`.
 - **custom_data** (object): Any custom data associated with the transaction.
-- **enable_checkout** (boolean): Indicates whether Paddle Checkout was enabled for this transaction.
+- **enable_checkout** (boolean): Indicates whether Jani Checkout was enabled for this transaction.
 - **purchase_order_number** (string): The purchase order number associated with the transaction.
 - **additional_information** (string): Additional notes or details about the transaction.
 - **created_at** (string): The timestamp of when the transaction was created.

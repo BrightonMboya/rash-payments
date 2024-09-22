@@ -16,12 +16,12 @@ The request body should include the necessary details to preview the transaction
 - **address** (object, optional): Address for this transaction preview. Required if you do not provide `customer_ip_address`, `address_id`, or `customer_id`. Includes:
   - **postal_code** (string or null): ZIP or postal code of the address. Helps in accurate tax calculations.
   - **country_code** (string): Two-letter ISO 3166-1 alpha-2 country code.
-- **customer_id** (string, optional): Paddle ID of the customer for this preview. Prefix with `ctm_`.
+- **customer_id** (string, optional): Jani ID of the customer for this preview. Prefix with `ctm_`.
 - **currency_code** (string, optional): ISO 4217 currency code (e.g., `USD`, `EUR`, `GBP`).
-- **discount_id** (string, optional): Paddle ID of the discount applied to this preview. Prefix with `dsc_`.
+- **discount_id** (string, optional): Jani ID of the discount applied to this preview. Prefix with `dsc_`.
 - **ignore_trials** (boolean, optional): Set to `true` to ignore trials for transaction preview calculations. Defaults to `false`.
 - **items** (array[object], required): List of items to preview. Each item includes:
-  - **price_id** (string): Paddle ID of the catalog price for the item, prefixed with `pri_`.
+  - **price_id** (string): Jani ID of the catalog price for the item, prefixed with `pri_`.
   - **quantity** (integer): Quantity of this item.
   - **include_in_totals** (boolean): Whether this item should be included in totals. Used to exclude one-time charges from calculations.
 
@@ -92,8 +92,8 @@ The response provides a preview of the transaction, including calculated totals 
 
 **Response Fields:**
 
-- **customer_id** (string or null): Paddle ID of the customer for the preview, prefixed with `ctm_`.
-- **address_id** (string or null): Paddle ID of the address used for the preview, prefixed with `add_`.
+- **customer_id** (string or null): Jani ID of the customer for the preview, prefixed with `ctm_`.
+- **address_id** (string or null): Jani ID of the address used for the preview, prefixed with `add_`.
 - **currency_code** (string): ISO 4217 currency code used.
 - **discount_id** (string or null): ID of the discount applied.
 - **customer_ip_address** (string or null): IP address used if provided.
